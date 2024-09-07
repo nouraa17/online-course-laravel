@@ -27,3 +27,20 @@ Route::get('/register', function () {
 Route::get('/blogs', function () {
     return view('partial-components.blogs');
 });
+Route::get('/blogDetails', function () {
+    return view('partial-components.blog-details');
+});
+Route::get('/contact', function () {
+    return view('partial-components.contact');
+});
+Route::get('/myLearning', function () {
+    return view('partial-components.my-learning');
+});
+Route::get('/studentProfile', function () {
+    return view('partial-components.student-profile');
+});
+
+Route::get('/subscribtion', function () {
+    return view('partial-components.subscribtion');
+});
+

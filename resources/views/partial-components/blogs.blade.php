@@ -35,7 +35,7 @@
           </div>
           <div class=" col-lg-3 col-md-6 col-sm-12">
               <div class="card mb-3 mb-lg-0 " style="width: 17rem; min-height: 22rem; position: relative;">
-                  <a href="blogs-details/single-blog3.html">
+                  <a href="/blogDetails">
                       <img src="{{asset('imgs/DSCI0005-1200x900.jpg')}}" class="blog-image card-img-top" alt="...">
                   </a>
                   <div class="card-body">
