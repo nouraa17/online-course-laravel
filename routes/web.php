@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/login', function () {
@@ -23,4 +27,14 @@ Route::get('/login', function () {
 
 Route::get('/register', function () {
     return view('auth.register');
+});
+
+Route::get('/instructor', function () {
+    return view('instructor');
+});
+Route::get('/course-landing', function () {
+    return view('course-landing');
+});
+Route::get('/course', function () {
+    return view('course');
 });
