@@ -24,12 +24,41 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 });
-Route::get('/blogs', function () {
-    return view('partial-components.blogs');
+// blogs route
+Route::group(['prefix'=>'blogs'],function(){
+    Route::get('/',function(){
+        return view('partial-components.blogs.index');} );
+    Route::get('/blog1', function () {
+        return view('partial-components.blogs.blog1');
+    });
+    Route::get('/blog2', function () {
+        return view('partial-components.blogs.blog2');
+    });
+    Route::get('/blog3', function () {
+        return view('partial-components.blogs.blog3');
+    });
+    Route::get('/blog4', function () {
+        return view('partial-components.blogs.blog4');
+    });
+    Route::get('/blog5', function () {
+        return view('partial-components.blogs.blog5');
+    });
+    Route::get('/blog6', function () {
+        return view('partial-components.blogs.blog6');
+    });
+    Route::get('/blog7', function () {
+        return view('partial-components.blogs.blog7');
+    });
+    Route::get('/blog8', function () {
+        return view('partial-components.blogs.blog8');
+    });
+    Route::get('/blog9', function () {
+        return view('partial-components.blogs.blog9');
+    });
+
 });
-Route::get('/blogDetails', function () {
-    return view('partial-components.blog-details');
-});
+
+
 Route::get('/contact', function () {
     return view('partial-components.contact');
 });
