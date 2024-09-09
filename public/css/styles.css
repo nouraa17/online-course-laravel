@@ -798,3 +798,9 @@ a {
     top: 0;
     transform: rotateZ(180deg)
   }
+  .t-primary{
+      color: #0d6efd!important;
+  }
+.t-primary-dark{
+      color: #0a3c88 !important;
+  }

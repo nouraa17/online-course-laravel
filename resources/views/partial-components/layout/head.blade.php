@@ -31,15 +31,6 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('css/styles.css')}}" rel="stylesheet">
+
     @yield('custom-style')
-    <style>
-        .card-title.text-primary,
-        .card-title.text-dark{
-            direction: rtl;
-            font-size: 15px;
-        }
-        .read-btn.btn.border-none.btn-success{
-            font-size: 12px;
-        }
-    </style>
 </head>

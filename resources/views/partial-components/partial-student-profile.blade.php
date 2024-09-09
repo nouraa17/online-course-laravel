@@ -1,20 +1,16 @@
-@extends('general-layout')
-@section('title','Student Profile')
-
-@section('content')
- <!-- profile -->
- <div class="container p-0 mb-5 mt-5">
+<!-- profile -->
+<div class="container p-0 mb-5 mt-5">
     <div class="row">
         <div class="col-lg-3 col-md-6 col-sm-6">
             <div class="card left-side " style="width: 15rem; ">
                 <img src="imgs/Profile-PNG-File.png " class=" card-img-top w-50 img-fluid mx-auto d-block  "
-                    alt="...">
-                    <div class="edit-icon">
-                        <a href=""><i class=" p-1 bi bi-pencil-fill bg-success text-white"></i></a>
-                    </div>
+                     alt="...">
+                <div class="edit-icon">
+                    <a href=""><i class=" p-1 bi bi-pencil-fill bg-success text-white"></i></a>
+                </div>
                 <div class="card-body">
-                    <h5 class="card-title text-center ">Nourhan Muhammad</h5>
-                    <p class="card-text text-center text-secondary ">nourmuhmd17@gmail.com</p>
+                    <h5 class="card-title text-center ">N M</h5>
+                    <p class="card-text text-center text-secondary ">n@gmail.com</p>
                     <div class="border border-bottom"></div>
 
                     <div class="mt-2 px-2">
@@ -45,7 +41,7 @@
                         <!-- name -->
                         <div>
                             <p class="text-secondary m-0">Full name</p>
-                            <h5 class="m-0">Nourhan Muhammad</h5>
+                            <h5 class="m-0">N M</h5>
                         </div>
                         <!-- country code -->
                         <div class="mt-3">
@@ -69,7 +65,7 @@
                         <div>
                             <p class="text-secondary m-0">Email <a href="" class="text-success fw-bold fs-5">(change
                                     email)</a></p>
-                            <h5 class="  m-0 text-wrap">nourmuhmd17@gmail.com</h5>
+                            <h5 class="  m-0 text-wrap">n@gmail.com</h5>
                         </div>
                         <!-- phone -->
                         <div class="mt-3">
@@ -92,17 +88,17 @@
 
             <div class=" mt-4 px-2 border ">
                 <h5 class="  d-inline text-center ">Financial information</h5>
-            <div class="row bg-light m-1 -flex align-items-center">
+                <div class="row bg-light m-1 -flex align-items-center">
 
-                <div class="col-lg-8 col-md-6 col-sm-6 mt-3">
-                    <p class="d-inline-block">Your financial information is required for your
-                    <a href=""  class="">Share$Earn</a>
+                    <div class="col-lg-8 col-md-6 col-sm-6 mt-3">
+                        <p class="d-inline-block">Your financial information is required for your
+                            <a href=""  class="">Share$Earn</a>
 
+                    </div>
+                    <div class="financial-link col-lg-4 col-md-6 col-sm-6">
+                        <a href=""  class="btn  p-1 m-0 ">Add financial information <i class="bi bi-plus fs-4"></i> </a>
+                    </div>
                 </div>
-                <div class="financial-link col-lg-4 col-md-6 col-sm-6">
-                    <a href=""  class="btn  p-1 m-0 ">Add financial information <i class="bi bi-plus fs-4"></i> </a>
-                </div>
-            </div>
             </div>
 
         </div>
@@ -113,5 +109,3 @@
     </div>
 
 </div>
-
-@endsection

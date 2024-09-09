@@ -1,6 +1,11 @@
 @extends('general-layout')
 @section('title','Blog Details')
-
+@section('custom-style')
+    @include('partial-components.blogs.blogs-style')
+@endsection
+@section('spinner')
+    @include('partial-components.layout.spinner')
+@endsection
 @section('content')
 
 <div class="container mt-5 justify-content-center">

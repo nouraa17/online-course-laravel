@@ -14,7 +14,7 @@
             <p class="lead">Instructor: John Doe</p>
             <p><strong>Duration:</strong> 10 weeks</p>
             <p><strong>Price:</strong> $199</p>
-            <a href="subscribtion.html" class="btn btn-success btn-lg">Enroll Now</a>
+            <a href="/subscription" class="btn btn-success btn-lg">Enroll Now</a>
         </div>
     </div>
 

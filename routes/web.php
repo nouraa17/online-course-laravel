@@ -28,10 +28,6 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 });
-// <<<<<<< reham
-// =======
-// <<<<<<< neama
-// blogs route
 
 Route::get('/instructor', function () {
     return view('instructor');
@@ -54,11 +50,10 @@ Route::get('/admin-users', function () {
 Route::get('/admin-courses', function () {
     return view('admin.courses-list');
 });
-// >>>>>>> master
 
 Route::group(['prefix'=>'blogs'],function(){
     Route::get('/',function(){
-        return view('partial-components.blogs.index');} );
+        return view('blogs');} );
     Route::get('/blog1', function () {
         return view('partial-components.blogs.blog1');
     });
@@ -86,28 +81,26 @@ Route::group(['prefix'=>'blogs'],function(){
     Route::get('/blog9', function () {
         return view('partial-components.blogs.blog9');
     });
-
 });
 
 Route::get('/contact', function () {
-    return view('partial-components.contact');
+    return view('contact');
 });
-Route::get('/myLearning', function () {
-    return view('partial-components.my-learning');
+Route::get('/my-learning', function () {
+    return view('my-learning');
 });
-Route::get('/studentProfile', function () {
-    return view('partial-components.student-profile');
+Route::get('/student-profile', function () {
+    return view('student-profile');
 });
 
-Route::get('/subscribtion', function () {
-    return view('partial-components.subscribtion');
-// >>>>>>> master
+Route::get('/subscription', function () {
+    return view('subscription');
 });
 
 Route::get('/about', function () {
     return view('about');
 });
-Route::get('courses', function () {
+Route::get('/courses', function () {
     return view('courses');
 });
 
@@ -118,5 +111,6 @@ Route::get('/help', function () {
 Route::get('/testimonial', function () {
     return view('testimonial');
 });
-Route::get('team', function () {
+Route::get('/team', function () {
     return view('team');
+});

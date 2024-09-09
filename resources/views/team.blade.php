@@ -3,5 +3,5 @@
 @section('pageTitle','Team')
 @section('content')
 @include('partial-components.layout.headerPart')
-@include('partial-components.team_section')
+@include('partial-components.team')
 @endsection
