@@ -1,0 +1,11 @@
+@extends('general-layout')
+@section('title','About')
+@section('pageTitle','About')
+@section('spinner')
+    @include('partial-components.layout.spinner')
+@endsection
+@section('content')
+@include('partial-components.layout.headerPart')
+@include('partial-components.servicesSection')
+@include('partial-components.aboutSection')
+@endsection
