@@ -1,6 +1,6 @@
 <!-- Navbar Start -->
 <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
-    <a href="index.html" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
+    <a href="/" class="navbar-brand d-flex align-items-center px-4 px-lg-5">
         <h2 class="m-0 text-primary"><i class="fa fa-book me-3"></i>Dr. Islam Osama</h2>
     </a>
     <button type="button" class="navbar-toggler me-4" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
@@ -16,7 +16,7 @@
                         type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form> -->
             </div>
-            <a href="index.html" class="nav-item nav-link">Home</a>
+            <a href="/" class="nav-item nav-link">Home</a>
             <a href="about.html" class="nav-item nav-link">About</a>
             <div class="nav-item dropdown">
                 <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Services</a>
@@ -31,7 +31,7 @@
                     <a href="blogs.html" class="dropdown-item active">Blogs</a>
                     <a href="portfolio.html" class="dropdown-item">Dr. Islam</a>
                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
+{{--                    <a href="404.html" class="dropdown-item">404 Page</a>--}}
                 </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
