@@ -13,8 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
+//Route::get('/', function () {
+//    return view('welcome');
+//});
+
 Route::get('/', function () {
-    return view('welcome');
+    return view('index');
 });
 
 Route::get('/login', function () {
@@ -24,7 +28,32 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 });
+// <<<<<<< neama
 // blogs route
+
+Route::get('/instructor', function () {
+    return view('instructor');
+});
+Route::get('/course-landing', function () {
+    return view('course-landing');
+});
+Route::get('/course', function () {
+    return view('course');
+});
+Route::get('/category', function () {
+    return view('category-courses');
+});
+Route::get('/404', function () {
+    return view('404');
+});
+Route::get('/admin-users', function () {
+    return view('admin.users-list');
+});
+Route::get('/admin-courses', function () {
+    return view('admin.courses-list');
+});
+// >>>>>>> master
+
 Route::group(['prefix'=>'blogs'],function(){
     Route::get('/',function(){
         return view('partial-components.blogs.index');} );
@@ -72,4 +101,3 @@ Route::get('/studentProfile', function () {
 Route::get('/subscribtion', function () {
     return view('partial-components.subscribtion');
 });
-

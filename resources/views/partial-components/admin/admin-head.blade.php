@@ -1,12 +1,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>@yield('title') - Islam Osama Official Website</title>
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
-    <meta content="" name="keywords">
-    <meta content="" name="description">
-
-
+    <title>Admin - @yield('title')</title>
     <!-- Google Web Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -31,15 +26,4 @@
 
     <!-- Template Stylesheet -->
     <link href="{{asset('css/styles.css')}}" rel="stylesheet">
-    @yield('custom-style')
-    <style>
-        .card-title.text-primary,
-        .card-title.text-dark{
-            direction: rtl;
-            font-size: 15px;
-        }
-        .read-btn.btn.border-none.btn-success{
-            font-size: 12px;
-        }
-    </style>
 </head>
