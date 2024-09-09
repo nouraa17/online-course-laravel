@@ -9,7 +9,7 @@
         <div class="col-lg-8 mb-3">
             <h2 class="mb-4">إيجابيات وسلبيات .. تحليل خطاب الرئيس26يونيو</h2>
             <div class="card">
-                <img src="../imgs/blog-default.jpg" class="card-img-top" alt="Wild Landscape"/>
+                <img src="{{asset('../imgs/blog-default.jpg')}}" class="card-img-top" alt="Wild Landscape"/>
                 <div class="card-body">
 
                     <div class="card-text ar">

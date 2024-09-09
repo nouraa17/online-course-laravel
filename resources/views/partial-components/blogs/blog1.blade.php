@@ -9,7 +9,7 @@
         <div class="col-lg-8 mb-3">
             <h2 class="mb-4">“فكرة” تكرم د. إسلام أسامة بجامعة حلوان</h2>
             <div class="card">
-                <img src="../imgs/دكتور-إسلام-أسامة-جامعة-حلوان-3-22-1200x900.jpg" class="card-img-top" alt="Wild Landscape"/>
+                <img src="{{asset('../imgs/دكتور-إسلام-أسامة-جامعة-حلوان-3-22-1200x900.jpg')}}" class="card-img-top" alt="Wild Landscape"/>
                 <div class="card-body">
 
                     <div class="card-text ar">
