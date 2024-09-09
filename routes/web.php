@@ -28,6 +28,8 @@ Route::get('/login', function () {
 Route::get('/register', function () {
     return view('auth.register');
 });
+// <<<<<<< reham
+// =======
 // <<<<<<< neama
 // blogs route
 
@@ -87,7 +89,6 @@ Route::group(['prefix'=>'blogs'],function(){
 
 });
 
-
 Route::get('/contact', function () {
     return view('partial-components.contact');
 });
@@ -100,4 +101,22 @@ Route::get('/studentProfile', function () {
 
 Route::get('/subscribtion', function () {
     return view('partial-components.subscribtion');
+// >>>>>>> master
 });
+
+Route::get('/about', function () {
+    return view('about');
+});
+Route::get('courses', function () {
+    return view('courses');
+});
+
+Route::get('/help', function () {
+    return view('help');
+});
+
+Route::get('/testimonial', function () {
+    return view('testimonial');
+});
+Route::get('team', function () {
+    return view('team');
