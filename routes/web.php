@@ -38,3 +38,15 @@ Route::get('/course-landing', function () {
 Route::get('/course', function () {
     return view('course');
 });
+Route::get('/category', function () {
+    return view('category-courses');
+});
+Route::get('/404', function () {
+    return view('404');
+});
+Route::get('/admin-users', function () {
+    return view('admin.users-list');
+});
+Route::get('/admin-courses', function () {
+    return view('admin.courses-list');
+});

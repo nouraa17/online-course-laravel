@@ -31,7 +31,7 @@
                     <a href="blogs.html" class="dropdown-item active">Blogs</a>
                     <a href="portfolio.html" class="dropdown-item">Dr. Islam</a>
                     <a href="testimonial.html" class="dropdown-item">Testimonial</a>
-                    <a href="404.html" class="dropdown-item">404 Page</a>
+{{--                    <a href="404.html" class="dropdown-item">404 Page</a>--}}
                 </div>
             </div>
             <a href="contact.html" class="nav-item nav-link">Contact</a>
