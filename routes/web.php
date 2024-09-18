@@ -114,3 +114,27 @@ Route::get('/testimonial', function () {
 Route::get('/team', function () {
     return view('team');
 });
+
+// dashboard
+
+Route::group(['prefix'=>'dashboard/' ,'as'=>'dashboard.'],function(){
+
+    // blogs route
+Route::group(['prefix'=>'blogs','as'=>'blogs.'],function(){
+    Route::get('/index',function(){
+        return view('partial-components.admin.blogs.index');} )->name('index');
+    Route::get('/create',function(){
+        return view('partial-components.admin.blogs.create');} )->name('create');
+    Route::get('/edit',function(){
+        return view('partial-components.admin.blogs.edit');} )->name('edit');
+});
+
+// users route
+Route::group(['prefix'=>'users','as'=>'users.'],function(){
+    Route::get('/index',function(){
+        return view('partial-components.admin.users.index');} )->name('index');
+
+});
+
+});
+
