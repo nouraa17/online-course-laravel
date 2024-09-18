@@ -9,10 +9,10 @@
     --dark: #181d38;
 }
 *{
-    font-family: "Cairo", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 .fw-medium {
-    font-weight: 600 !important;
+    font-weight: 1000 !important;
 }
 
 .fw-semi-bold {
