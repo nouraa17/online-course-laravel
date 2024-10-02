@@ -17,6 +17,7 @@
                     <div class="info">
                         <a href="#" class="d-block">Islam Osama</a>
                     </div>
+                    
                 </div>
 
 
@@ -123,7 +124,7 @@
                                     </a>
                                 </li>
                                 <li class="nav-item">
-                                    <a href="" class="nav-link">
+                                    <a href={{route('dashboard.courses.create')}} class="nav-link">
                                         {{-- <i class="far fa-circle nav-icon"></i> --}}
                                         <p>Create Course</p>
                                     </a>

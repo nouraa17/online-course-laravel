@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -135,6 +136,22 @@ Route::group(['prefix'=>'users','as'=>'users.'],function(){
         return view('partial-components.admin.users.index');} )->name('index');
 
 });
+// categories route
+Route::group(['prefix'=>'categories','as'=>'categories.'],function(){
+    Route::get('/index',function(){
+        return view('partial-components.admin.categories.index');} )->name('index');
+        Route::get('/create',function(){
+            return view('partial-components.admin.categories.create');} )->name('create');
+
+            Route::post('/store',[CategoryController::class ,'store'])->name('store');
+        });
+// courses route
+Route::group(['prefix'=>'courses','as'=>'courses'],function(){
+    Route::get('/index',function(){
+        return view('partial-components.admin.courses.index');} )->name('index');
+        Route::get('/create',function(){
+            return view('partial-components.admin.courses.create');} )->name('create');
 
 });
 
+});
