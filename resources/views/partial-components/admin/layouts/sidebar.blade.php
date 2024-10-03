@@ -28,7 +28,28 @@
                     </li>
                 </ul>
             </li>
-
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-users "></i> categories</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard.categories.index')}}"><i class="icon-star"></i> All categories</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard.categories.create')}}"><i class="icon-star"></i> Create Category</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item nav-dropdown">
+                <a class="nav-link nav-dropdown-toggle" href="#"><i class="fa fa-users "></i> courses</a>
+                <ul class="nav-dropdown-items">
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard.courses.index')}}"><i class="icon-star"></i> All courses</a>
+                    </li>
+           <li class="nav-item">
+                        <a class="nav-link" href="{{route('dashboard.courses.create')}}"><i class="icon-star"></i> Create course</a>
+                    </li>
+                </ul>
+            </li>
         </ul>
     </nav>
 </div>

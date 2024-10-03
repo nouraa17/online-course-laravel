@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\Admin\CourseController;
 use App\Http\Controllers\Admin\CategoryController;
 
 /*
@@ -138,20 +139,22 @@ Route::group(['prefix'=>'users','as'=>'users.'],function(){
 });
 // categories route
 Route::group(['prefix'=>'categories','as'=>'categories.'],function(){
-    Route::get('/index',function(){
-        return view('partial-components.admin.categories.index');} )->name('index');
-        Route::get('/create',function(){
-            return view('partial-components.admin.categories.create');} )->name('create');
-
+            Route::get('/index',[CategoryController::class ,'index'] )->name('index');
+            Route::get('/create',[CategoryController::class ,'create'])->name('create');
             Route::post('/store',[CategoryController::class ,'store'])->name('store');
+            Route::get('/edit/{id}',[CategoryController::class ,'edit'])->name('edit');
+            Route::put('/update/{id}',[CategoryController::class ,'update'])->name('update');
+            Route::get('/delete/{id}',[CategoryController::class ,'destroy'])->name('delete');
         });
 // courses route
-Route::group(['prefix'=>'courses','as'=>'courses'],function(){
-    Route::get('/index',function(){
-        return view('partial-components.admin.courses.index');} )->name('index');
-        Route::get('/create',function(){
-            return view('partial-components.admin.courses.create');} )->name('create');
 
+Route::group(['prefix'=>'courses','as'=>'courses.'],function(){
+         Route::get('/index',[CourseController::class ,'index'] )->name('index');
+         Route::get('/create',[CourseController::class ,'create']  )->name('create');
+         Route::post('/store',[CourseController::class ,'store']  )->name('store');
+         Route::get('/edit/{id}',[CourseController::class ,'edit'])->name('edit');
+         Route::put('/update/{id}',[CourseController::class ,'update'])->name('update');
+         Route::get('/delete/{id}',[CourseController::class ,'destroy'])->name('delete');
 });
 
 });

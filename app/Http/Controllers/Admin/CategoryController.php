@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers\Admin;
 use App\Models\Category;
+use App\Models\Course;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,7 @@ class CategoryController extends Controller
     public function index()
     {
         $categories=Category::get();
-        return view('admin.categories.categoriesList',compact('categories'));
+        return view('partial-components.admin.categories.index',compact('categories'));
     }
 
     /**
@@ -37,7 +38,7 @@ class CategoryController extends Controller
             'name'=>'required|max:30',
             'description'=>'required|max:100'],$messages);
             Category::create($data);
-            return redirect('partial-components/admin/categories/');
+            return redirect('dashboard/categories/index');
     }
 
     /**
@@ -53,15 +54,19 @@ class CategoryController extends Controller
      */
     public function edit(string $id)
     {
-        //
-    }
+        $category=Category::findOrFail($id);
+        return view('partial-components.admin.categories.edit',compact('category'));}
 
     /**
      * Update the specified resource in storage.
      */
     public function update(Request $request, string $id)
     {
-        //
+        $data=$request->validate([
+            'name'=>'required',
+           ],);
+           Category::where('id',$id)->update($data);
+           return redirect('dashboard/categories/index');
     }
 
     /**
@@ -69,6 +74,18 @@ class CategoryController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $courses = course::where('category_id', $id)->get()->toArray();
+
+        if(count($courses)<=0){
+
+
+            Category::where('id',$id)->delete();
+            return redirect('dashboard/categories/index')->with('success','category is deleted successfully');
+    } else{
+        return redirect()->back()->with('cancel','delete is not available');
+
+
+
+
     }
-}
+}}
